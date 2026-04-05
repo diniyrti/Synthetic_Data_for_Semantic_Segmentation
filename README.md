@@ -44,7 +44,7 @@ Next, the mixing process is performed. The mixing process for the sample boundar
 </p>
 
 ## Synthetic Dataset for Land Use Classification Using UNet
-This project implements a 4-level encoder-decoder U-Net architecture designed for the multiclass semantic segmentation of Sentinel-2 MSI imagery. Utilizing 10 spectral bands, the model classifies 16 distinct land cover categories. A Dice Loss function was employed during training to optimize spatial overlap and maintain the integrity of complex land boundaries.
+This project implements a 4-level encoder-decoder U-Net architecture designed for the multiclass semantic segmentation of Sentinel-2 MSI imagery. Utilizing 10 spectral bands, the model classifies 16 distinct land use categories. A Dice Loss function was employed during training to optimize spatial overlap and maintain the integrity of complex land boundaries.
 
 <p align="center">
   <img src="https://github.com/diniyrti/Synthetic_Data_for_Semantic_Segmentation_UNet/blob/main/images/Learning%20Curves%20Train%20vs%20Val.png?raw=true" width="900">
