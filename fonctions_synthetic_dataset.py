@@ -55,7 +55,7 @@ def generate_shape(shape):
     - An image with a random shape drawn on it.
     """
     rand_shape = np.random.choice(['circle', 'rectangle', 'triangle'], p=[0.1, 0.85, 0.05])
-    img = np.zeros((shape[0], shape[1], 13))  # Initialize a transparent image.change 13 and the tires used
+    img = np.zeros((shape[0], shape[1], 10))  # Initialize a transparent image.change 10 and the tires used
     
     if rand_shape == 'circle':
         # Generate a circle with random center and radius.
@@ -399,7 +399,7 @@ def incrustation(img_sim, mask_sim, mask_prop, image, value, place, NDVI=False):
         print('ALARME MASK FILTER < 0')
     
     # Prepare for the incrustation process by selecting the appropriate area based on the mask and place.
-    expand_mask_filter = np.repeat(mask_filter[:, :, np.newaxis], 13, axis=2) #change 13 and the tires used
+    expand_mask_filter = np.repeat(mask_filter[:, :, np.newaxis], 10, axis=2) #change 10 and the tires used
     if place == 'mask':
         mask_ind = mask_sim
         target = 100
